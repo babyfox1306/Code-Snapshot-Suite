@@ -1,0 +1,28 @@
+{
+  "name": "@snapshot/core",
+  "version": "0.1.0",
+  "description": "Core utilities for Code Snapshot Suite",
+  "main": "out/index.js",
+  "types": "out/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf out",
+    "test": "jest",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.10"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.0",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.0.0",
+    "rimraf": "^5.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "out/**/*"
+  ]
+}

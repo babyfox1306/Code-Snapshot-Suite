@@ -1,0 +1,27 @@
+{
+  "name": "code-snapshot-suite",
+  "version": "0.1.0",
+  "description": "Code Snapshot Suite - Offline snapshot tools for developers",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "package": "npm run package --workspace=code-snapshot-journal",
+    "clean": "npm run clean --workspaces"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

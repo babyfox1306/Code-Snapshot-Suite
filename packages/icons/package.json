@@ -1,0 +1,22 @@
+{
+  "name": "@snapshot/icons",
+  "version": "0.1.0",
+  "description": "Icon assets for Code Snapshot Suite",
+  "main": "out/index.js",
+  "types": "out/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf out",
+    "lint": "eslint src --ext .ts",
+    "test": "echo 'No tests for icons package'"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "out/**/*",
+    "src/**/*.svg"
+  ]
+}

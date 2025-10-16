@@ -1,0 +1,19 @@
+# Extension Icon (128x128 PNG)
+# This would be a PNG file in a real implementation
+# For now, we'll create a placeholder
+
+# Icon should be:
+# - 128x128 pixels
+# - PNG format
+# - Simple, recognizable design
+# - Works in both light and dark themes
+# - Represents "snapshot" or "timeline" concept
+
+# Placeholder: Create a simple SVG that can be converted to PNG
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="20" fill="#007ACC"/>
+  <circle cx="64" cy="64" r="40" fill="white" opacity="0.9"/>
+  <path d="M44 64L56 76L84 48" stroke="#007ACC" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="64" cy="64" r="8" fill="#007ACC"/>
+  <path d="M64 56L64 72M56 64L72 64" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>
