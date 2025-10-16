@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Snapshot Suite - Pro Features</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            background: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .logo img {
+            width: 80px;
+            height: 80px;
+        }
+        
+        .features {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin: 40px 0;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+        
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #2c3e50;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        
+        .feature-card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .feature-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .feature-card .icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        .pricing {
+            background: #2c3e50;
+            color: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .pricing h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        
+        .price {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #4CAF50;
+            margin: 20px 0;
+        }
+        
+        .price-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-bottom: 40px;
+        }
+        
+        .cta-button {
+            background: #4CAF50;
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px;
+        }
+        
+        .cta-button:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(76, 175, 80, 0.3);
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 40px 0;
+            opacity: 0.8;
+        }
+        
+        .github-link {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .github-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .features {
+                padding: 40px 20px;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png" alt="Code Snapshot Suite Logo">
+            </div>
+            <h1>Code Snapshot Suite</h1>
+            <p>Professional snapshot tools for developers who value their code history</p>
+        </div>
+        
+        <div class="features">
+            <h2>🚀 Pro Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon">📊</div>
+                    <h3>Timeline Chart View</h3>
+                    <p>Interactive Chart.js visualization showing snapshot activity over time. Perfect for project managers and team leads to visualize development progress.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="icon">📝</div>
+                    <h3>Export Markdown Changelog</h3>
+                    <p>Generate detailed changelog with notes, diff, and timestamps for dev journaling. Solo developers and freelancers love this feature.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="icon">⏱️</div>
+                    <h3>Auto Snapshot</h3>
+                    <p>Automatic snapshots on timer/save events so devs never forget. Busy developers and students will appreciate this automation.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="icon">🔎</div>
+                    <h3>Search & Filter Snapshots</h3>
+                    <p>Advanced search and filtering for managing large projects. Enterprise developers need this for complex codebases.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="icon">🧹</div>
+                    <h3>Auto-Clean</h3>
+                    <p>Delete snapshots older than N days automatically. Keep your workspace clean without manual maintenance.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="icon">☁️</div>
+                    <h3>Cloud Sync Key</h3>
+                    <p>Future Pro+ feature for team collaboration. Development teams will love this for shared project snapshots.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pricing">
+            <h2>💰 Pro License</h2>
+            <div class="price">$8</div>
+            <div class="price-subtitle">One-time payment • Lifetime access</div>
+            <p>Unlock all Pro features with a single purchase. No subscriptions, no recurring fees.</p>
+            <a href="#" class="cta-button">Get Pro License</a>
+            <a href="https://github.com/babyfox1306/Code-Snapshot-Suite" class="cta-button" style="background: #6c757d;">View on GitHub</a>
+        </div>
+        
+        <div class="footer">
+            <p>Try the <a href="https://github.com/babyfox1306/Code-Snapshot-Suite" class="github-link">free version</a> first, then upgrade to Pro for advanced features!</p>
+            <p>© 2025 Code Snapshot Suite. Made with ❤️ for developers.</p>
+        </div>
+    </div>
+    
+    <script>
+        // Add some interactive effects
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.feature-card');
+            
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.borderLeftColor = '#4CAF50';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.borderLeftColor = '#667eea';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
